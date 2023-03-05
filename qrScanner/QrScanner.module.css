@@ -1,0 +1,104 @@
+.cameraWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cameraContainer {
+    width: 75%;
+    height: 45%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-animation: animation-scanner 1600ms infinite linear;
+    animation: animation-scanner 1600ms infinite linear;
+    bottom: 5%;
+}
+
+.camera {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: gray;
+}
+
+.camera video,
+.camera section {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+}
+
+.camera div {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 20%;
+}
+
+.cameraContainer__border {
+    width: 100%;
+    height: 25vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.scannerResult {
+    position: absolute;
+    top: 45%;
+    left: 44%;
+}
+
+@-webkit-keyframes animation-scanner {
+    0% {
+        width: 75%;
+        height: 45%;
+    }
+    50% {
+        width: 70%;
+        height: 40%;
+    }
+    100% {
+        width: 75%;
+        height: 45%;
+    }
+}
+
+@keyframes animation-scanner {
+    0% {
+        width: 75%;
+        height: 45%;
+    }
+    50% {
+        width: 70%;
+        height: 40%;
+    }
+    100% {
+        width: 75%;
+        height: 45%;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "qr-scanner",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "qr-code-styling": "^1.6.0-rc.1",
+        "react-qr-reader": "^2.2.1"
+    }
+}
